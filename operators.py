@@ -43,6 +43,7 @@ class AddInBMLcontainer(Operator):
     @classmethod
     def poll(cls, context):
         return context.object.active_material or not context.window_manager.BML.is_generating_preview
+        
 
     def is_thumbnails_updated(self):
         list_files = os.listdir(join(os.path.dirname(__file__), 'Thumbnails', 'Cloth')) + os.listdir(join(os.path.dirname(__file__), 'Thumbnails', 'Softbox')) + os.listdir(join(os.path.dirname(__file__), 'Thumbnails', 'Sphere')) + os.listdir(join(os.path.dirname(__file__), 'Thumbnails', 'Hair'))
