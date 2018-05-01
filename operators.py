@@ -37,6 +37,7 @@ class AddInBMLcontainer(Operator):
     bl_idname = "material.add_in_bml_container"
     bl_label = "Import active material into BML"
     bl_description = "Import active material into BML"
+    
     bl_options = {'REGISTER'}
 
     @classmethod
