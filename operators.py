@@ -36,6 +36,7 @@ class AddInBMLcontainer(Operator):
     ''' Conteneur qui gère les ajouts de materiau, les conflits (renommage) '''
     bl_idname = "material.add_in_bml_container"
     bl_label = "Import active material into BML"
+    
     bl_description = "Import active material into BML"    
     bl_options = {'REGISTER'}
 
